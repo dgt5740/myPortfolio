@@ -1,6 +1,7 @@
-baseURL: "https://hugo-profile.netlify.app"
-languageCode: "en-us"
-title: "Hugo Profile"
+baseURL: "https://dgt5740.github.io/myPortfolio/"
+languageCode: "ko-kr"
+title: "My Portfolio"
+defaultContentLanguage: "ko"
 
 
 # Multilingual configuration
@@ -488,8 +489,8 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "My Portfolio"
+  description: "초급프로젝트 과제"
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -562,24 +563,24 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
-    title: "Isabella."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
+    intro: "안녕하세요"
+    title: "개발자의 길을 걷고 있는"
+    subtitle: "양현수 입니다."
+    content: "전북대학교 / 컴퓨터인공지능학부(4년제) 재학 중"
     image: /images/hero.svg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
-      name: "Resume"
-      url: "#"
+      name: "자세히 알아보기"
+      url: "#projects"
       download: true
       newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
+          url: https://github.com/dgt5740
         - icon: fab fa-x-twitter
           url: https://example.com
       customIcons:
