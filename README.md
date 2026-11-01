@@ -1,242 +1,74 @@
-# Hugo Profile
 
-[![Twitter](https://img.shields.io/twitter/url?label=Tweet&style=social&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile) [![GitHub forks](https://img.shields.io/github/forks/gurusabarish/hugo-profile?style=plastic)](https://github.com/gurusabarish/hugo-profile/network) [![GitHub stars](https://img.shields.io/github/stars/gurusabarish/hugo-profile?style=plastic)](https://github.com/gurusabarish/hugo-profile/stargazers)
+```markdown
+# 2026년 초급프로젝트 과제 1 - 개인 포트폴리오 웹사이트
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5c1dcb34-cada-4c80-82b7-cfdbdbd7c774/deploy-status)](https://app.netlify.com/sites/hugo-profile/deploys)
-![Latest Release](https://img.shields.io/github/v/release/gurusabarish/hugo-profile?include_prereleases)
-![Last Commit](https://img.shields.io/github/last-commit/gurusabarish/hugo-profile)
-![Open Issues](https://img.shields.io/github/issues/gurusabarish/hugo-profile?color=important)
-![Open Pull Requests](https://img.shields.io/github/issues-pr/gurusabarish/hugo-profile?color=yellowgreen)
-![License](https://img.shields.io/github/license/gurusabarish/hugo-profile)
+> **Hugo 정적 사이트 생성기(SSG)**와 **GitHub Actions**를 활용하여 구축 및 자동 배포한 개인 소개 및 포트폴리오 웹사이트입니다.
 
-**Hugo Profile:** a high-performance, mobile-first Hugo theme for personal portfolios and blogs.
-
-- Example Site: [https://hugo-profile.netlify.app](https://hugo-profile.netlify.app)
-- Wiki Page: [https://github.com/gurusabarish/hugo-profile/wiki](https://github.com/gurusabarish/hugo-profile/wiki)
-- Full documentation (versioned in this repo): [wiki/Home.md](wiki/Home.md)
-
-**Features:**
-- Fully Responsive
-- Minimalist Design
-- SEO Friendly
-- Internationalization (i18n) Support
-- [Light/Dark/Auto Theme Color Configuration](https://github.com/gurusabarish/hugo-profile/wiki/Color-Customization)
-- Categories and Tags Support
-- Analytics Support ([Google Analytics](https://gohugo.io/templates/internal/#google-analytics))
-- Comment Support ([Disqus](https://gohugo.io/content-management/comments/))
-- Contact Form Integration ([FormSpree](https://formspree.io/))
-- Built with Bootstrap and Font Awesome
-
-
-## Requirements
-
-- **Hugo version 0.87.0 or higher**   
-To check your installed version, run:   
-  ```bash
-  hugo version
-  ```
-  If Hugo is not installed, follow the [official installation guide](https://gohugo.io/installation/) for installation.
-
-
-## Quick Start 
-
-1. Create a new Hugo site:  
-
-    ```bash
-    hugo new site my-site --format="yaml"
-    ```  
-    This uses a `hugo.yaml` configuration file instead of the default TOML format. 
-
-2. Add a theme.  
-
-    Option A: Clone this repository inside your themes folder.  
-    This allows you to make lots of custom changes.
-    ```bash
-    cd my-site/themes
-    git clone https://github.com/gurusabarish/hugo-profile.git
-    ```
-
-    Option B: Add as a Git submodule.  
-    This allows you to get automatic or structured updates from the original repository.
-
-    ```bash
-    cd my-site
-    git init
-    git submodule add https://github.com/gurusabarish/hugo-profile.git themes/hugo-profile
-    ```    
-
-3. Copy the example configuration file to your site root:
-    ```bash
-    cp -f themes/hugo-profile/exampleSite/hugo.yaml ./hugo.yaml
-    ```
-
-4. Start the Hugo development server:
-    ```bash
-    hugo server
-    ```
-5. Recommended: Copy example content and assets.
-
-    When you first run `hugo server`, the site may look incomplete — images may be missing and the Blog or Gallery sections might not appear.  
-
-    This is because their content currently resides in `themes/hugo-profile/exampleSite/`, whereas Hugo expects them in the root-level `static/` (for images) and `content/` (for pages) directories.
-
-    To have a complete view of the example site, run:  
-
-    ```bash
-    rsync -av themes/hugo-profile/exampleSite/static/ ./static/
-    rsync -av themes/hugo-profile/exampleSite/content/ ./content/
-    ```
-
-    You can customize or replace this content to match your own site.
-
-
-## Content Management
-
-You can now start customizing your site.
-
-To change the site title or homepage content, edit the `hugo.yaml` file in the root directory. This file also controls settings for showing or hiding sections of the site (e.g., About, Education).
-
-To create a new page, for example, in the Blog section, run:
-
-```bash
-hugo new content content/blogs/my-post.md
-```
-
-This creates a new file in the `content/blogs/` folder with front matter that includes metadata like the date.
-
-Here are some useful resources for your reference:
-
-* [Hugo's Quick Start Guide](https://gohugo.io/getting-started/quick-start/) – About how to create a site, add content, and publish the site.
-
-* [Hugo Content Organization – Giraffe Academy](https://www.mikedane.com/static-site-generators/hugo/content-organization/)
-
-* [Wiki Page](https://github.com/gurusabarish/hugo-profile/wiki) – Tips specific to this theme.
-
-
-## Internationalization (i18n)
-
-This theme supports multiple languages out of the box. Hugo Profile includes built-in translations for English, Spanish, and French, and you can easily add your own languages.
-
-### Setting Up Multiple Languages
-
-To enable multilingual support, add the following to your `hugo.yaml`:
-
-```yaml
-defaultContentLanguage: "en"
-defaultContentLanguageInSubdir: false
-
-languages:
-  en:
-    languageName: "English"
-    weight: 1
-  es:
-    languageName: "Español"
-    weight: 2
-  fr:
-    languageName: "Français"
-    weight: 3
-```
-
-### How It Works
-
-1. **Translation Files**: The theme includes translation files in the `i18n/` directory:
-   - `en.toml` - English translations
-   - `es.toml` - Spanish translations
-   - `fr.toml` - French translations
-
-2. **Language Switcher**: When you enable multiple languages, a language switcher dropdown automatically appears in the navigation bar, allowing visitors to switch between languages.
-
-3. **Backward Compatibility**: All existing sites continue to work without any changes. The theme automatically falls back to English or your configured language if no multilingual setup is provided.
-
-### Adding a New Language
-
-To add support for a new language (e.g., German):
-
-1. Create a new translation file `i18n/de.toml` in your site root or in the theme:
-   ```toml
-   [nav_about]
-   other = "Über uns"
-   
-   [nav_experience]
-   other = "Erfahrung"
-   
-   # Add all other translations...
-   ```
-
-2. Add the language to your `hugo.yaml`:
-   ```yaml
-   languages:
-     de:
-       languageName: "Deutsch"
-       weight: 4
-   ```
-
-3. (Optional) Create language-specific content in `content/de/` directory.
-
-### Customizing Translations
-
-You can override any translation by adding it to your site's `params.terms` section in `hugo.yaml`:
-
-```yaml
-params:
-  terms:
-    read: "Custom Read Text"
-    pageNotFound: "Custom 404 Message"
-```
-
-For more information about Hugo's multilingual features, see the [Hugo Multilingual Documentation](https://gohugo.io/content-management/multilingual/).
-
-
-## Deployment
-
-If you do not require extensive customization, the easiest way to deploy is:
-1. Click the **Use this template** button to create your own repository.
-2. Connect the repository to **Netlify**.
-
-Whenever you make changes to the files inside the `exampleSite` folder, Netlify will automatically detect and deploy your changes. 
+- **공개 배포 사이트**: [https://dgt5740.github.io/myPortfolio/](https://dgt5740.github.io/myPortfolio/)
+- **소스 코드 저장소**: [https://github.com/dgt5740/myPortfolio](https://github.com/dgt5740/myPortfolio)
+- **작성자**: 양현수 (전북대학교 컴퓨터인공지능학부)
 
 ---
 
+## 1. 개발 및 빌드 환경 안내
 
-If you followed the steps in the [Quick Start](#quick-start) section above, you can still deploy your site to Netlify, but you'll need a few additional configurations.   
+본 프로젝트는 아래 도구 및 환경에서 빌드와 배포가 검증되었습니다.
 
-See the **[Host on Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/)** guide for further information.
+- **OS**: Windows 11
+- **Hugo**: `v0.143.0+extended` 이상 (Dart Sass 파이프라인 지원 필요)
+- **Python**: 3.9 이상
+- **CI/CD**: GitHub Actions
+
+### 로컬 실행 및 확인 방법
+로컬 개발 환경에서 사이트를 실시간으로 확인하려면 프로젝트 루트에서 `site` 폴더로 이동한 뒤 Hugo 로컬 서버를 실행합니다.
+
+```bash
+cd site
+hugo server -b http://localhost:1313/ --theme template --themesDir themes
+
+```
+
+실행 후 웹 브라우저에서 `http://localhost:1313/`으로 접속하면 실시간 미리보기가 가능합니다.
 
 ---
 
-For manual deployment, run `hugo` to generate the final, ready-to-deploy static site in the `public/` folder, which you can upload to any hosting platform.
+## 2. 콘텐츠 수정 및 재배포 안내 (P57)
 
-It is recommended to delete the `public/` folder before each build to ensure it only contains the latest output:
+### 주요 수정 파일 위치
 
+| 구분 | 수정 파일 경로 | 주요 설명 |
+| --- | --- | --- |
+| **기본 정보 & 콘텐츠** | `site/hugo.yaml` | 상단 메뉴, About, Education, Experience, Skills, Projects, Contact |
+| **커스텀 스타일** | `site/themes/template/static/css/theme.css` | 디자인 스타일 및 접근성 보정 |
+| **푸터 소셜 아이콘** | `site/themes/template/layouts/partials/sections/footer/socialNetwork.html` | 푸터 영역 소셜 네트워크 링크/아이콘 |
+| **이미지 자원** | `site/static/images/` | 프로필 사진 및 대표 프로젝트 이미지 |
+
+### 자동 재배포 및 반영 확인 절차
+
+1. **로컬 파일 수정 후 커밋 & 푸시**
 ```bash
-rm -rf public/ && hugo
-```
-
-
-## Trouble-Shooting
+git add .
+git commit -m "docs: update portfolio content"
+git push origin main
 
 ```
-ERROR error calling resources.GetRemote: Get "https://publish.twitter.com/oembed?dnt=false&url=https%3A%2F%2Ftwitter.com%2FGoHugoIO%2Fstatus%2F1315233626070503424": net/http: TLS handshake timeout
-Built in 10266 ms
-Error: error building site: logged 1 error(s)
+
+
+2. **GitHub Actions 배포 확인**
+* 원격 저장소의 `Actions` 탭으로 이동하여 `Deploy Hugo to GitHub Pages` 워크플로가 정상 완료(녹색 체크 표시)되었는지 확인합니다.
+
+
+3. **배포 상태 최종 확인**
+* [https://dgt5740.github.io/myPortfolio/](https://dgt5740.github.io/myPortfolio/) 접속 후 변경사항을 확인합니다.
+
+
+
+---
+
+## 3. 원본 테마 및 라이선스 고지
+
+* **사용 테마**: [Hugo Profile](https://github.com/gurusabarish/hugo-profile) by gurusabarish
+* **라이선스**: MIT License
+* **테마 배포 준비 도구**: 수업 제공 `prepare_github_pages.py` v3.1 스크립트 활용
+
 ```
-The TLS handshake timeout error can happen due to network issues. If this error persists, you can delete the shortcode example `{{< tweet user="GoHugoIO" id="1315233626070503424" >}}` in the "content/blogs/rich-content.md" file.
-
-
-## Issues
-
-If you have a question, please [open an issue](https://github.com/gurusabarish/hugo-profile/issues) for help and to help those who come after you. The more information you can provide, the better!
-
-## Contributing
-
-Contributions, issues, and feature requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-Licensed under [MIT](LICENSE)
-
-## 🤝 Support
-
-Give a ⭐️ or buy me a ~`coffee`~ tea if you like this project!
-
-<a href="https://www.buymeacoffee.com/gurusabarish" target="_blank" rel="noopener"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="40" width="145" alt="Buy Me A Coffee"></a>
