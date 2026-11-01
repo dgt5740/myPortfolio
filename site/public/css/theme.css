@@ -1,3 +1,6 @@
+/* 1. 웹폰트 import는 CSS 파일의 최상단(맨 첫 줄)에 와야 정상 동작합니다! */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 /* light mode */
 .light > *{
     background-color: var(--background-color) !important;
@@ -50,41 +53,59 @@ body:not(.dark) #sun {
     display: none;
 }
 
+/* ========================================================
+   초급프로젝트 과제 1 - 한국어 폰트, 여백, 반응형/접근성 영구 고정
+   ======================================================== */
 
+/* 사이트 전체 기본 글꼴 및 글자 크기 지정 */
+body, #primary-font {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif !important;
+  font-size: 1.05rem !important;
+  line-height: 1.75 !important;
+}
 
+/* 제목(헤드라인) 글꼴 굵기 및 크기 밸런스 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Pretendard", sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
 
+/* 소개(About) 및 활동(Projects) 본문 글자 크기 */
+.content, #about .content, #projects .card-text {
+  font-size: 1rem !important;
+  line-height: 1.8 !important;
+}
 
-
-/* 1. 첫 배너(Hero)의 불필요하게 넓은 빈 공간 줄이기 */
+/* 첫 배너(Hero)와 소개(About) 사이 여백 조절 */
 #hero {
   min-height: auto !important;     /* 100vh 강제 해제 */
-  padding-top: 3rem !important;    /* 위쪽 여백 적절히 유지 */
-  padding-bottom: 3rem !important; /* 아래 소개와의 간격을 대폭 축소 */
+  padding-top: 4rem !important;    /* 위쪽 여백 */
+  padding-bottom: 4rem !important; /* 아래 소개와의 간격 */
 }
 
 #about {
-  padding-top: 5rem !important;    /* 소개 섹션 위쪽 여백도 자연스럽게 줄임 */
+  padding-top: 4rem !important;    /* 소개 섹션 위쪽 여백 */
 }
 
-/* 2. 모바일(390px) 가로 스크롤 완전 방지 */
+/* 모바일(390px) 가로 스크롤 완전 방지 (P31, P32, P33) */
 html, body {
   overflow-x: hidden;
   width: 100%;
 }
 
-/* 3. 한글 텍스트 및 긴 URL 줄바꿈 처리 */
+/* 한글 텍스트 및 긴 URL 줄바꿈 처리 (P36) */
 p, h1, h2, h3, h4, span, a, li, .content {
   word-break: keep-all;
   overflow-wrap: break-word;
 }
 
-/* 4. 고정 헤더에 앵커 도착 지점이 가려지는 현상 방지 */
+/* 고정 헤더에 앵커 도착 지점이 가려지는 현상 방지 (P22, P38) */
 section, [id] {
   scroll-margin-top: 85px;
 }
 
-/* 5. 키보드 Tab 키 탐색 시 모든 클릭 요소에 포커스 링 보장 */
-/* 링크, 버튼, 입력창, 다크모드 버튼, 소셜 아이콘 전부 적용 */
+/* 키보드 Tab 키 탐색 시 포커스 링 보장 (P41~P43) */
 a:focus,
 a:focus-visible,
 button:focus,
@@ -100,12 +121,11 @@ input:focus-visible,
   box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.3) !important;
 }
 
-/* 원형 소셜 아이콘은 포커스 링도 원형으로 예쁘게 표시 */
 a.social-icon:focus-visible {
   border-radius: 50% !important;
 }
 
-/* 6. 200% 브라우저 확대 시 레이아웃 보호 */
+/* 200% 브라우저 확대 시 레이아웃 보호 (P40) */
 @media screen and (max-width: 576px) {
   .container {
     padding-left: 1rem !important;

@@ -8,7 +8,7 @@
                     {{ $hero.intro }}
                 </span>
                 <h1>
-                    {{ $hero.title }}
+                    {{ $hero.title | safeHTML }}
                 </h1>
                 <h2>
                     {{ $hero.subtitle }}
