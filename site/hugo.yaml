@@ -23,11 +23,11 @@ languages:
       # 1. 히어로 섹션
       hero:
         enable: true
-        intro: "안녕하세요"
+        intro: "안녕하세요!"
         title: "꿈을 향해<br>나아가고 있는"
         subtitle: "양현수 입니다."
         content: "전북대학교 / 컴퓨터인공지능학부 재학 중"
-        image: /images/hero.svg
+        image: /images/me2.jpg
         bottomImage:
           enable: false
         roundImage: true
@@ -53,9 +53,19 @@ languages:
         enable: true
         title: "소개"
         image: "/images/me.png"
-        content: >
-          컴퓨터공학과 인공지능 기술에 깊은 관심을 가지고 실생활의 문제를 코드로 해결하는 소프트웨어 엔지니어를 지향하고 있습니다.
-          <b>관심 분야 (P71):</b> 웹 프론트엔드 최적화 및 사용자 인터페이스(UI/UX) 구현입니다. 다양한 디바이스 환경에서 모든 사용자가 차별 없이 빠르고 직관적으로 정보를 이용할 수 있는 접근성과 반응형 웹 구조에 깊은 매력을 느끼고 있습니다.
+        content: |
+          다가올 미래의 기술들과 인공지능에 깊은 관심을 가지고 실생활의 문제를 해결하는 소프트웨어 엔지니어를 지향하고 있습니다.
+          
+          온디바이스 AI 분야에 관심이 있고, 다양한 디바이스 환경에서 모든 사용자가 차별 없이 빠르고 직관적으로 AI 서비스를 이용할 수 있도록 최적화와 접근성에 대해 깊게 파보고 싶습니다.
+        skills:
+          enable: true
+          title: ""
+          items:
+           - "HTML / CSS / JS"
+           - "Python"
+           - "GitHub"
+           - "Linux"
+           - "C++"
 
       # 3. 학력 섹션
       education:
@@ -68,6 +78,8 @@ languages:
               url: "https://www.jbnu.ac.kr"
             date: "2024.03 - 현재 재학 중"
             content: |-
+              GPA : 3.9 / 5.0
+
               이수 교과목 및 학습 분야:
                 - 자료구조와 알고리즘
                 - 선형대수학, 확률및통계
@@ -78,26 +90,21 @@ languages:
         enable: true
         title: "활동 및 이력"
         items:
-          - company: "컴퓨터인공지능학부 전공 학술 스터디"
+          - company: "C언어 기초 & 알고리즘 스터디"
             companyUrl: "https://github.com/dgt5740"
             jobs:
-              - name: "웹 개발 & 알고리즘 스터디원"
-                date: "2024.03 - 현재"
+              - name: "컴퓨터인공지능학부 과동아리 스터디"
+                date: "2024.04 - 2024.07"
                 content: >
-                  동료 학우들과 함께 매주 알고리즘 문제 풀이 및 웹 기초 지식을 공유하며 프로그래밍 기초 역량을 다지고 있습니다.
-              - name: "초급프로젝트 개인 실습"
-                date: "2026.09 - 2026.10"
-                content: >
-                  정적 사이트 생성기(SSG)와 GitHub Actions를 활용한 웹사이트 구축 과제를 수행하며 CI/CD 배포 파이프라인 전 과정을 실습했습니다.
+                  동료 학우들과 함께 매주 알고리즘 문제 풀이와 기초 지식을 공유하며 프로그래밍 기초 역량을 다졌습니다.
 
-          # ⭐ [추가된 활동 칸 - 여기서 회사/활동명과 내용을 고치시면 됩니다!]
-          - company: "교내 소프트웨어 전공 프로젝트 팀"
-            companyUrl: "https://www.jbnu.ac.kr"
+          - company: "초급프로젝트 개인 실습"
+            companyUrl: "https://github.com/dgt5740/myPortfolio"
             jobs:
               - name: "프로그래밍 기초 및 협업 프로젝트"
-                date: "2024.09 - 2024.12"
+                date: "2026.09 - 2026.12"
                 content: >
-                  팀원들과 함께 프로그래밍 기초 과제를 수행하고 Git을 통한 코드 버전 관리 및 협업 프로세스를 학습했습니다.
+                  웹 프로그래밍 기초 과제를 수행하고 Git을 통한 코드 버전 관리 및 협업 프로세스를 학습했습니다.
 
       # 5. 역량 섹션 (P73 역량과 적용 사례)
       skills:
@@ -190,7 +197,7 @@ languages:
         title: "Walking the Path of a Developer,"
         subtitle: "HyeonSoo Yang."
         content: "Undergraduate Student, Dept. of Computer and Artificial Intelligence, Jeonbuk National University"
-        image: /images/hero.svg
+        image: /images/me2.jpg
         bottomImage:
           enable: false
         roundImage: true

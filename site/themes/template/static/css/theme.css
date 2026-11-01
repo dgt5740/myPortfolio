@@ -132,3 +132,8 @@ a.social-icon:focus-visible {
     padding-right: 1rem !important;
   }
 }
+
+#experience .d-flex .d-block,
+#experience small {
+  white-space: nowrap !important;
+}
