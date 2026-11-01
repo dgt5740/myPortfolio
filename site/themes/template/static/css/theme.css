@@ -49,3 +49,66 @@ body.dark #moon {
 body:not(.dark) #sun {
     display: none;
 }
+
+
+
+
+
+
+/* 1. 첫 배너(Hero)의 불필요하게 넓은 빈 공간 줄이기 */
+#hero {
+  min-height: auto !important;     /* 100vh 강제 해제 */
+  padding-top: 3rem !important;    /* 위쪽 여백 적절히 유지 */
+  padding-bottom: 3rem !important; /* 아래 소개와의 간격을 대폭 축소 */
+}
+
+#about {
+  padding-top: 5rem !important;    /* 소개 섹션 위쪽 여백도 자연스럽게 줄임 */
+}
+
+/* 2. 모바일(390px) 가로 스크롤 완전 방지 */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* 3. 한글 텍스트 및 긴 URL 줄바꿈 처리 */
+p, h1, h2, h3, h4, span, a, li, .content {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* 4. 고정 헤더에 앵커 도착 지점이 가려지는 현상 방지 */
+section, [id] {
+  scroll-margin-top: 85px;
+}
+
+/* 5. 키보드 Tab 키 탐색 시 모든 클릭 요소에 포커스 링 보장 */
+/* 링크, 버튼, 입력창, 다크모드 버튼, 소셜 아이콘 전부 적용 */
+a:focus,
+a:focus-visible,
+button:focus,
+button:focus-visible,
+input:focus,
+input:focus-visible,
+#theme-toggle:focus,
+#theme-toggle:focus-visible,
+.btn:focus,
+.btn:focus-visible {
+  outline: 3px solid #2563EB !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.3) !important;
+}
+
+/* 원형 소셜 아이콘은 포커스 링도 원형으로 예쁘게 표시 */
+a.social-icon:focus-visible {
+  border-radius: 50% !important;
+}
+
+/* 6. 200% 브라우저 확대 시 레이아웃 보호 */
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}

@@ -2,168 +2,168 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/myPortfolio/blogs/</loc>
+    <loc>http://localhost:1313/blogs/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/es/blogs/</loc>
+    <loc>http://localhost:1313/es/blogs/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/fr/blogs/</loc>
+    <loc>http://localhost:1313/fr/blogs/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/ejemplo/</loc>
+    <loc>http://localhost:1313/tags/ejemplo/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/es/</loc>
+    <loc>http://localhost:1313/es/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/example/</loc>
+    <loc>http://localhost:1313/tags/example/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/exemple/</loc>
+    <loc>http://localhost:1313/tags/exemple/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/fr/</loc>
+    <loc>http://localhost:1313/fr/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/markdown-syntax/</loc>
+    <loc>http://localhost:1313/tags/markdown-syntax/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/mathjax/</loc>
+    <loc>http://localhost:1313/tags/mathjax/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/blogs/math/</loc>
+    <loc>http://localhost:1313/blogs/math/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/es/blogs/math/</loc>
+    <loc>http://localhost:1313/es/blogs/math/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/fr/blogs/math/</loc>
+    <loc>http://localhost:1313/fr/blogs/math/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/sintaxis-de-markdown/</loc>
+    <loc>http://localhost:1313/tags/sintaxis-de-markdown/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/syntaxe-markdown/</loc>
+    <loc>http://localhost:1313/tags/syntaxe-markdown/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko-kr"
-                href="http://localhost:1313/myPortfolio/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/myPortfolio/en/tags/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
-                href="http://localhost:1313/myPortfolio/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/myPortfolio/en/"
+                href="http://localhost:1313/en/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/myPortfolio/es/gallery/</loc>
-    <lastmod>2022-06-25T18:35:46+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/fr/gallery/</loc>
-    <lastmod>2022-06-25T18:35:46+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/gallery/</loc>
-    <lastmod>2022-06-25T18:35:46+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/%C3%A9chantillon/</loc>
-    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/blogs/markdown-syntax/</loc>
-    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/muestra/</loc>
-    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/sample/</loc>
-    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/es/blogs/markdown-syntax/</loc>
-    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/fr/blogs/markdown-syntax/</loc>
-    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/blogs/emoji-support/</loc>
-    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/emoji-support/</loc>
-    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/es/blogs/emoji-support/</loc>
-    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/soporte-de-emoji/</loc>
-    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/fr/blogs/emoji-support/</loc>
-    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/support-des-emoji/</loc>
-    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/blogs/placeholder-text/</loc>
-    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/placeholder-text/</loc>
-    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/fr/blogs/placeholder-text/</loc>
-    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/texte-de-remplissage/</loc>
-    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/es/blogs/placeholder-text/</loc>
-    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/texto-de-relleno/</loc>
-    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/es/blogs/rich-content/</loc>
-    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/contenido-enriquecido/</loc>
-    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/fr/blogs/rich-content/</loc>
-    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/contenu-enrichi/</loc>
-    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/blogs/rich-content/</loc>
-    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/tags/rich-content/</loc>
-    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/myPortfolio/categories/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
-                href="http://localhost:1313/myPortfolio/categories/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/myPortfolio/en/categories/"
+                href="http://localhost:1313/en/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/gallery/</loc>
+    <lastmod>2022-06-25T18:35:46+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/gallery/</loc>
+    <lastmod>2022-06-25T18:35:46+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/gallery/</loc>
+    <lastmod>2022-06-25T18:35:46+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%C3%A9chantillon/</loc>
+    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/markdown-syntax/</loc>
+    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/muestra/</loc>
+    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sample/</loc>
+    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/blogs/markdown-syntax/</loc>
+    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/blogs/markdown-syntax/</loc>
+    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/emoji-support/</loc>
+    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/emoji-support/</loc>
+    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/blogs/emoji-support/</loc>
+    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/soporte-de-emoji/</loc>
+    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/blogs/emoji-support/</loc>
+    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/support-des-emoji/</loc>
+    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/placeholder-text/</loc>
+    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/placeholder-text/</loc>
+    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/blogs/placeholder-text/</loc>
+    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/texte-de-remplissage/</loc>
+    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/blogs/placeholder-text/</loc>
+    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/texto-de-relleno/</loc>
+    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/blogs/rich-content/</loc>
+    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/contenido-enriquecido/</loc>
+    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/blogs/rich-content/</loc>
+    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/contenu-enrichi/</loc>
+    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/rich-content/</loc>
+    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/rich-content/</loc>
+    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko-kr"
+                href="http://localhost:1313/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/"
                 />
   </url>
 </urlset>
