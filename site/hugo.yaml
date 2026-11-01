@@ -10,7 +10,7 @@ languages:
     weight: 1
     contentDir: "content"
     params:
-      title: "양현수 포트폴리오"
+      title: "양현수"
       description: "초급프로젝트 과제 1 - 개인 소개 및 포트폴리오 웹사이트"
       favicon: "fav.png"
       brand:
@@ -24,7 +24,7 @@ languages:
       hero:
         enable: true
         intro: "안녕하세요"
-        title: "개발자의 길을 걷고 있는"
+        title: "개발자의 길을 걷는"
         subtitle: "양현수 입니다."
         content: "전북대학교 / 컴퓨터인공지능학부 재학 중"
         image: /images/hero.svg
@@ -51,7 +51,7 @@ languages:
       # 2. 소개 섹션 (P71 관심 분야, P72 학습 목표 및 계획)
       about:
         enable: true
-        title: "소개 (About Me)"
+        title: "소개"
         image: "/images/me.png"
         content: >
           컴퓨터공학과 인공지능 기술에 깊은 관심을 가지고 실생활의 문제를 코드로 해결하는 소프트웨어 엔지니어를 지향하고 있습니다.
@@ -63,24 +63,23 @@ languages:
       # 3. 학력 섹션
       education:
         enable: true
-        title: "학력 (Education)"
+        title: "학력"
         items:
           - title: "컴퓨터인공지능학부 (학사 과정)"
             school:
               name: "전북대학교 (Jeonbuk National University)"
               url: "https://www.jbnu.ac.kr"
             date: "2024.03 - 현재 재학 중"
-            GPA: "학업 우수"
             content: |-
-              주요 이수 및 학습 분야:
-                - 컴퓨터 프로그래밍 및 자료구조 기초
-                - 객체지향프로그래밍, 웹 프로그래밍 실습
-                - 오픈소스 소프트웨어 도구 및 버전 관리(Git) 활용
+              이수 교과목 및 학습 분야:
+                - 자료구조와 알고리즘
+                - 선형대수학, 확률및통계
+                - 버전 관리 도구(Git) 활용과 웹서비스 개발
 
       # 4. 활동 및 이력 섹션 (3개 항목)
       experience:
         enable: true
-        title: "활동 및 이력 (Experience)"
+        title: "활동 및 이력"
         items:
           - company: "컴퓨터인공지능학부 전공 학술 스터디"
             companyUrl: "https://github.com/dgt5740"
@@ -106,7 +105,7 @@ languages:
       # 5. 역량 섹션 (P73 역량과 적용 사례)
       skills:
         enable: true
-        title: "보유 역량 (Skills)"
+        title: "보유 역량"
         items:
           - title: "HTML/CSS & 반응형 웹"
             description: "시맨틱 마크업을 준수하며, 다양한 해상도(390px, 768px, 1440px)에 대응하는 유연한 그리드 레이아웃을 구성할 수 있습니다."
@@ -118,18 +117,15 @@ languages:
       # 6. 대표 활동 섹션 (2개 항목)
       projects:
         enable: true
-        title: "대표 활동 (Projects)"
+        title: "대표 활동"
         items:
           # [활동 1: 메인 대표 활동 (P74~P79 채점 기준 100% 충족)]
           - title: "Hugo 기반 개인 포트폴리오 웹사이트 구축 및 자동 배포"
             image: /images/projects/profile.png
             content: >
-              <b>수행 시기 및 진행 상태 (P74):</b> 2026년 10월 (완료)<br>
-              <b>활동 목적 (P75):</b> 정적 웹 사이트 생성기(SSG)의 빌드 원리를 이해하고, CI/CD 자동화 파이프라인과 반응형 UI를 적용한 포트폴리오 사이트를 제작하여 개인 역량을 체계적으로 전달하기 위해 수행했습니다.<br>
-              <b>본인 역할 및 기여 범위 (P76):</b> 개인 프로젝트로서 기획, 테마 커스터마이징, 콘텐츠 작성, 반응형 스타일 보정, Git 버전 관리 및 배포까지 전 과정을 100% 단독 수행했습니다.<br>
-              <b>수행 과정과 기술 선택 이유 (P77):</b> 빠른 빌드 속도와 정적 파일 생성 안정성이 뛰어난 Hugo를 선택하였으며, GitHub Actions 워크플로를 연동하여 main 브랜치 푸시 시 자동 배포되도록 구성했습니다.<br>
-              <b>산출물과 결과 (P78):</b> HTTPS 기반 공개 웹사이트 및 GitHub 소스 저장소 (<a href="https://github.com/dgt5740/myPortfolio" target="_blank">저장소 링크</a>)<br>
-              <b>배운 점과 개선 방향 (P79):</b> 템플릿 구조 커스터마이징과 웹 접근성(포커스, 명도 대비)의 중요성을 깊이 체득했습니다. 다음 단계로는 블로그 포스팅 기능과 검색 엔진 최적화(SEO)를 보완할 예정입니다.
+              수행 시기 및 진행 상태 (P74):2026년 10월
+              활동 목적 (P75):</b> 정적 웹 사이트 생성기(SSG)의 빌드 원리를 이해하고, CI/CD 자동화 파이프라인과 반응형 UI를 적용한 포트폴리오 사이트를 제작하여 개인 역량을 체계적으로 전달하기 위해 수행했습니다.<br>
+            
             badges:
               - "Hugo"
               - "GitHub Actions"
@@ -142,7 +138,7 @@ languages:
           - title: "파이썬 기반 알고리즘 문제 풀이 및 자동화 실습"
             image: /images/projects/converter.jpg
             content: >
-              <b>수행 시기:</b> 2024년 2학기<br>
+              수행 시기: 2024년 2학기\n
               <b>목적 및 내용:</b> 파이썬 언어의 기초 문법을 익히고, 주요 정렬 및 탐색 알고리즘을 직접 구현하여 컴퓨팅 사고력을 기르는 실습 프로젝트입니다.
             badges:
               - "Python"
@@ -154,19 +150,19 @@ languages:
       # 7. 수상 및 성과 섹션
       achievements:
         enable: true
-        title: "수상 및 성과 (Achievements)"
+        title: "수상 및 성과"
         items:
           - title: "교내 프로그래밍 실습 과제 완수"
             content: "자료구조 및 프로그래밍 기초 실습을 성실히 수행하고, 과제 분석 및 보고서 작성을 통해 실무 역량을 함양했습니다."
-          - title: "Hugo 오픈소스 테마 포트폴리오 구축"
+          - title: "Hugo 테마를 이용한 웹페이지"
             content: "GitHub Pages 기반의 반응형 개인 소개 웹사이트를 완성하고 GitHub Actions 자동 배포 파이프라인을 성공적으로 수립했습니다."
             url: "https://github.com/dgt5740/myPortfolio"
 
       # 8. 연락처 섹션 (버튼 문구 '이메일 보내기' 적용 완료)
       contact:
         enable: true
-        title: "연락처 (Contact)"
-        content: "프로젝트 협업 및 기타 문의 사항은 이메일이나 GitHub을 통해 언제든 편하게 연락해 주세요."
+        title: "연락처"
+        content: "이메일(dgt5740@gmail.com)로 언제든 편하게 연락 주세요!"
         email: "dgt5740@gmail.com"
         btnName: "이메일 보내기"
       footer:

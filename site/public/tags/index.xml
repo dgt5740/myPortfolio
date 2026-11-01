@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on 양현수 포트폴리오</title>
+		<link>http://localhost:1313/myPortfolio/tags/</link>
+		<description>Recent content in Tags on 양현수 포트폴리오</description>
+		<generator>Hugo</generator>
+		<language>ko-kr</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 09 Dec 2022 19:53:33 +0530</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/myPortfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Ejemplo</title>
+				<link>http://localhost:1313/myPortfolio/tags/ejemplo/</link>
+				<pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/ejemplo/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Example</title>
+				<link>http://localhost:1313/myPortfolio/tags/example/</link>
+				<pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/example/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Exemple</title>
+				<link>http://localhost:1313/myPortfolio/tags/exemple/</link>
+				<pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/exemple/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Markdown Syntax</title>
+				<link>http://localhost:1313/myPortfolio/tags/markdown-syntax/</link>
+				<pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/markdown-syntax/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Mathjax</title>
+				<link>http://localhost:1313/myPortfolio/tags/mathjax/</link>
+				<pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/mathjax/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Sintaxis De Markdown</title>
+				<link>http://localhost:1313/myPortfolio/tags/sintaxis-de-markdown/</link>
+				<pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/sintaxis-de-markdown/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Syntaxe Markdown</title>
+				<link>http://localhost:1313/myPortfolio/tags/syntaxe-markdown/</link>
+				<pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/syntaxe-markdown/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Échantillon</title>
+				<link>http://localhost:1313/myPortfolio/tags/%C3%A9chantillon/</link>
+				<pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/%C3%A9chantillon/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Muestra</title>
+				<link>http://localhost:1313/myPortfolio/tags/muestra/</link>
+				<pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/muestra/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Sample</title>
+				<link>http://localhost:1313/myPortfolio/tags/sample/</link>
+				<pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/sample/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Emoji Support</title>
+				<link>http://localhost:1313/myPortfolio/tags/emoji-support/</link>
+				<pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/emoji-support/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Soporte De Emoji</title>
+				<link>http://localhost:1313/myPortfolio/tags/soporte-de-emoji/</link>
+				<pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/soporte-de-emoji/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Support Des Emoji</title>
+				<link>http://localhost:1313/myPortfolio/tags/support-des-emoji/</link>
+				<pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/support-des-emoji/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Placeholder Text</title>
+				<link>http://localhost:1313/myPortfolio/tags/placeholder-text/</link>
+				<pubDate>Sat, 03 Apr 2021 22:41:10 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/placeholder-text/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Texte De Remplissage</title>
+				<link>http://localhost:1313/myPortfolio/tags/texte-de-remplissage/</link>
+				<pubDate>Sat, 03 Apr 2021 22:41:10 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/texte-de-remplissage/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Texto De Relleno</title>
+				<link>http://localhost:1313/myPortfolio/tags/texto-de-relleno/</link>
+				<pubDate>Sat, 03 Apr 2021 22:41:10 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/texto-de-relleno/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Contenido Enriquecido</title>
+				<link>http://localhost:1313/myPortfolio/tags/contenido-enriquecido/</link>
+				<pubDate>Sat, 03 Apr 2021 19:53:33 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/contenido-enriquecido/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Contenu Enrichi</title>
+				<link>http://localhost:1313/myPortfolio/tags/contenu-enrichi/</link>
+				<pubDate>Sat, 03 Apr 2021 19:53:33 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/contenu-enrichi/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Rich Content</title>
+				<link>http://localhost:1313/myPortfolio/tags/rich-content/</link>
+				<pubDate>Sat, 03 Apr 2021 19:53:33 +0530</pubDate>
+				<guid>http://localhost:1313/myPortfolio/tags/rich-content/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>
