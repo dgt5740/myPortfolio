@@ -18,6 +18,7 @@ languages:
 
       # 상단 네비게이션 & 검색창 문구
       navbar:
+      disableSearch: true
         searchPlaceholder: "검색..."
 
       # 1. 히어로 섹션
@@ -189,6 +190,7 @@ languages:
         title: "HyeonSoo Yang"
 
       navbar:
+      disableSearch: true
         searchPlaceholder: "Search..."
 
       hero:
