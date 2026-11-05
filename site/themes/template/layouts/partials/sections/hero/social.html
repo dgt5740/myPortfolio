@@ -2,10 +2,12 @@
     {{ range .Site.Params.hero.socialLinks.fontAwesomeIcons }}
     <span class="px-1">
         <a href="{{ .url }}"
-            {{ if not (hasPrefix .url "#") }} target="_blank" {{ end }}
+            {{ if not (hasPrefix .url "#") }} target="_blank" rel="noopener noreferrer" {{ end }}
             class="btn social-icon"
+            aria-label="{{ .title | default .url }}"
+            title="{{ .title | default .url }}"
         >
-            <i class="{{ .icon }}"></i>
+            <i class="{{ .icon }}" aria-hidden="true"></i>
         </a>
     </span>
     {{ end }}
