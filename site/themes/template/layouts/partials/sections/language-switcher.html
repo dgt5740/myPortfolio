@@ -1,12 +1,12 @@
 {{ if hugo.IsMultilingual }}
 <li class="nav-item navbar-text dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
-        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="nav-link dropdown-toggle bg-transparent border-0" type="button" id="languageDropdown"
+        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="언어 선택 (Language)">
         {{ with .Language }}
-            🌐
+            <span aria-hidden="true">🌐</span>
             <span class="d-none d-md-inline">{{ .LanguageName }}</span>
         {{ end }}
-    </a>
+    </button>
     <div class="dropdown-menu shadow-lg rounded" aria-labelledby="languageDropdown">
         {{- /* Use page translations if available, otherwise fall back to site languages */ -}}
         {{- $translations := .AllTranslations -}}
