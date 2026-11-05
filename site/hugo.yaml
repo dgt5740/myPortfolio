@@ -12,7 +12,7 @@ languages:
     params:
       title: "현수"
       description: "초급프로젝트 과제 1 - 개인 소개 및 포트폴리오 웹사이트"
-      favicon: "fav.png"
+      favicon: "/fav.png"
       brand:
         title: "양현수"
 
@@ -184,7 +184,7 @@ languages:
     params:
       title: "HyeonSoo Yang Portfolio"
       description: "Personal introduction and portfolio website"
-      favicon: "fav.png"
+      favicon: "/fav.png"
       brand:
         title: "HyeonSoo Yang"
 
