@@ -55,8 +55,8 @@
             <!-- navbar brand -->
             <a class="navbar-brand primary-font text-wrap" href="{{ .Site.Home.RelPermalink }}">
                 {{ if and (or (.Site.Params.favicon) (.Site.Params.navbar.brandLogo)) (.Site.Params.navbar.showBrandLogo | default true) }}
-                <img src="{{ (.Site.Params.navbar.brandLogo | default .Site.Params.favicon) | relURL }}" width="30" height="30"
-                    class="d-inline-block align-top" alt="{{ .Site.Params.title }} 로고">
+                <img src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}" width="30" height="30"
+    class="d-inline-block align-top" alt="{{ .Site.Params.navbar.brandName | default .Site.Params.title }} 로고">
                 {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
                 {{ else }}
                 {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
@@ -84,7 +84,7 @@
                     {{ if not (.Site.Params.navbar.disableSearch | default false) }}
                         <li class="nav-item navbar-text d-block d-md-none">
                             <div class="nav-link">
-                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='{{ .Site.Params.navbar.searchPlaceholder | default (i18n "search_placeholder") }}' aria-label="Search" oninput="searchOnChange(event)">
+                                <input id="search-mobile" autocomplete="off" class="form-control mr-sm-2" placeholder='{{ .Site.Params.navbar.searchPlaceholder | default (i18n "search_placeholder") }}' aria-label="Search" oninput="searchOnChange(event)">
                             </div>
                         </li>
                     {{ end }}
