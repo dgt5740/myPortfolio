@@ -12,13 +12,12 @@ languages:
     params:
       title: "현수"
       description: "초급프로젝트 과제 1 - 개인 소개 및 포트폴리오 웹사이트"
-      favicon: "/fav.png"
+      favicon: "fav.png"
       brand:
         title: "양현수"
 
       # 상단 네비게이션 & 검색창 문구
       navbar:
-        disableSearch: true
         searchPlaceholder: "검색..."
 
       # 1. 히어로 섹션
@@ -55,9 +54,11 @@ languages:
         title: "소개"
         image: "/images/me.png"
         content: |
-          다가올 미래의 기술들과 인공지능에 깊은 관심을 가지고 실생활의 문제를 해결하는 소프트웨어 엔지니어를 지향하고 있습니다.
+          인공지능 기술에 깊은 관심을 가지고 실생활의 문제를 해결하는 소프트웨어 엔지니어를 지향하고 있습니다.
           
-          온디바이스 AI 분야에 관심이 있고, 다양한 디바이스 환경에서 모든 사용자가 차별 없이 빠르고 직관적으로 AI 서비스를 이용할 수 있도록 최적화와 접근성에 대해 깊게 파보고 싶습니다.
+          온디바이스 AI와 웹 프론트엔드에 관심이 있습니다. 고성능 데이터서버에 의존하지 않고도 사용자의 기기에서 즉시 동작하는 AI 기술로 모든 사용자가 제약 없이 사용할 수 있는 AI 기술에 관심을 가지고 있습니다.
+          온라인 LLM 대신 오픈소스 모델인 Ollama를 로컬에 설치하고, 학교 과제나 프로젝트를 수행해볼 예정입니다.
+          TensorFlow를 활용해 간단한 이미지 분류 모델을 구현해 볼 계획입니다.
         skills:
           enable: true
           title: ""
@@ -102,7 +103,7 @@ languages:
           - company: "초급프로젝트 개인 실습"
             companyUrl: "https://github.com/dgt5740/myPortfolio"
             jobs:
-              - name: "프로그래밍 기초 및 협업 프로젝트"
+              - name: "웹 프로그래밍 기초 및 버전 관리"
                 date: "2026.09 - 2026.12"
                 content: >
                   웹 프로그래밍 기초 과제를 수행하고 Git을 통한 코드 버전 관리 및 협업 프로세스를 학습했습니다.
@@ -185,12 +186,11 @@ languages:
     params:
       title: "HyeonSoo Yang Portfolio"
       description: "Personal introduction and portfolio website"
-      favicon: "/fav.png"
+      favicon: "fav.png"
       brand:
         title: "HyeonSoo Yang"
 
       navbar:
-        disableSearch: true
         searchPlaceholder: "Search..."
 
       hero:
