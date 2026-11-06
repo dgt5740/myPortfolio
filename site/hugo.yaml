@@ -126,11 +126,11 @@ languages:
         title: "대표 활동"
         items:
           # [활동 1: 메인 대표 활동 (P74~P79 채점 기준 100% 충족)]
-          - title: "Hugo 기반 개인 포트폴리오 웹사이트 구축 및 자동 배포"
+          - title: "Hugo 기반 포트폴리오 웹사이트 구축 및 자동 배포"
             image: /images/projects/profile.png
-            content: >
-              수행 시기 및 진행 상태 (P74):2026년 10월
-              활동 목적 (P75):</b> 정적 웹 사이트 생성기(SSG)의 빌드 원리를 이해하고, CI/CD 자동화 파이프라인과 반응형 UI를 적용한 포트폴리오 사이트를 제작하여 개인 역량을 체계적으로 전달하기 위해 수행했습니다.<br>
+            content: |
+              수행 시기: 2026년 10월 / 
+              활동 목적: 정적 웹사이트를 생성하고, GitHub Pages를 통해 자동화 환경까지 구축였습니다.
             
             badges:
               - "Hugo"
@@ -140,7 +140,6 @@ languages:
               - icon: fab fa-github
                 url: https://github.com/dgt5740/myPortfolio
 
-          # ⭐ [추가된 프로젝트 칸 - 여기서 제목과 설명 내용을 고치시면 됩니다!]
           - title: "파이썬 기반 알고리즘 문제 풀이 및 자동화 실습"
             image: /images/projects/converter.jpg
             content: >
@@ -302,7 +301,7 @@ languages:
               - icon: fab fa-github
                 url: https://github.com/dgt5740
           - title: "Python Algorithm Practice & Automation Tool"
-            image: /images/projects/converter.jpg
+            image: /images/projects/converter.png
             content: >
               <b>Timeline:</b> Fall 2024<br>
               <b>Overview:</b> Practiced data structures and algorithmic implementations in Python to enhance problem-solving capabilities.
