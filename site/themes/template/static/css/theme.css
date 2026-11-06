@@ -125,7 +125,7 @@ a.social-icon:focus-visible {
   border-radius: 50% !important;
 }
 
-/* 200% 브라우저 확대 시 레이아웃 보호 (P40) */
+/* 200% 브라우저 확대 시 레이아웃 보호 */
 @media screen and (max-width: 576px) {
   .container {
     padding-left: 1rem !important;
