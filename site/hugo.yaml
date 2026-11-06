@@ -108,7 +108,7 @@ languages:
                 content: >
                   웹 프로그래밍 기초 과제를 수행하고 Git을 통한 코드 버전 관리 및 협업 프로세스를 학습했습니다.
 
-      # 5. 역량 섹션 (P73 역량과 적용 사례)
+      # 5. 역량 섹션
       skills:
         enable: true
         title: "보유 역량"
@@ -120,17 +120,16 @@ languages:
           - title: "Python & 알고리즘"
             description: "기초 자료구조와 알고리즘 문제를 해결하며 논리적 사고력을 기르고, 자동화 스크립트를 작성하여 작업 효율을 높입니다."
 
-      # 6. 대표 활동 섹션 (2개 항목)
+      # 6. 대표 활동 섹션
       projects:
         enable: true
         title: "대표 활동"
         items:
-          # [활동 1: 메인 대표 활동 (P74~P79 채점 기준 100% 충족)]
           - title: "Hugo 기반 포트폴리오 웹사이트 구축 및 자동 배포"
             image: /images/projects/profile.png
             content: |
-              수행 시기: 2026년 10월 / 
-              활동 목적: 정적 웹사이트를 생성하고, GitHub Pages를 통해 자동화 환경까지 구축였습니다.
+              수행 시기: 2026년 10월 (완료) / 
+              활동: 정적 웹사이트를 생성하여 사용 가능한 포트폴리오 사이트를 제작했습니다. GitHub Pages를 통해 자동화 환경까지 구축였습니다.
             
             badges:
               - "Hugo"
@@ -140,11 +139,11 @@ languages:
               - icon: fab fa-github
                 url: https://github.com/dgt5740/myPortfolio
 
-          - title: "파이썬 기반 알고리즘 문제 풀이 및 자동화 실습"
+          - title: "파이썬 라이브러리를 통한 게임 제작 팀 프로젝트"
             image: /images/projects/converter.jpg
             content: >
-              수행 시기: 2024년 2학기\n
-              <b>목적 및 내용:</b> 파이썬 언어의 기초 문법을 익히고, 주요 정렬 및 탐색 알고리즘을 직접 구현하여 컴퓨팅 사고력을 기르는 실습 프로젝트입니다.
+              수행 시기: 2023년 2학기 (완료) / 
+              활동: 파이썬의 Pygame 라이브러리를 통해 게임을 만드는 팀 프로젝트를 진행했습니다. 하늘에서 내려오는 물체를 피하는 게임입니다.
             badges:
               - "Python"
               - "Algorithm"
