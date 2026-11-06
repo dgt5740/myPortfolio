@@ -87,7 +87,7 @@ languages:
                 - 선형대수학, 확률및통계
                 - 버전 관리 도구(Git) 활용과 웹서비스 개발
 
-      # 4. 활동 및 이력 섹션 (3개 항목)
+      # 4. 활동 및 이력 섹션
       experience:
         enable: true
         title: "활동 및 이력"
@@ -135,6 +135,9 @@ languages:
               - "Hugo"
               - "GitHub Actions"
               - "Web Accessibility"
+            featured:
+              name: "상세 보기 ->"
+              link: "/myPortfolio/projects/hugo_portfolio/"
             links:
               - icon: fab fa-github
                 url: https://github.com/dgt5740/myPortfolio
@@ -147,6 +150,9 @@ languages:
             badges:
               - "Python"
               - "Algorithm"
+            featured:
+              name: "상세 보기 ->"
+              link: "/myPortfolio/projects/python_game/"
             links:
               - icon: fab fa-github
                 url: https://github.com/dgt5740

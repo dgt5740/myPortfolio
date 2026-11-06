@@ -4,7 +4,7 @@ date: 2026-10-14
 description: "Hugo 기반 포트폴리오 웹사이트 구축 및 자동 배포 상세 내용"
 image: "/myPortfolio/images/projects/profile.png"
 toc: true
-badges:
+tags:
   - "Hugo"
   - "GitHub Actions"
   - "Web Accessibility"
