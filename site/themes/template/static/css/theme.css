@@ -137,3 +137,69 @@ a.social-icon:focus-visible {
 #experience small {
   white-space: nowrap !important;
 }
+
+/* ==========================================================================
+   Hero 텍스트 순차 페이드업 등장 애니메이션
+   ========================================================================== */
+@keyframes heroFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 1단계: "안녕하세요!" */
+#hero .content h5,
+#hero .content .subtitle {
+  opacity: 0;
+  animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.1s;
+}
+
+/* 2단계: "꿈을 향해 나아가고 있는" */
+#hero .content h1,
+#hero .content .title {
+  opacity: 0;
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.3s;
+}
+
+/* 3단계: "양현수 입니다." */
+#hero .content h2,
+#hero .content .lead {
+  opacity: 0;
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.5s;
+}
+
+/* 4단계: 소속 학과 및 버튼/소셜 아이콘 */
+#hero .content p,
+#hero .content .hero-buttons,
+#hero .content .btn,
+#hero .content ul.social-icon {
+  opacity: 0;
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.7s;
+}
+
+/* P50 웹 접근성 준수: 동작 감지 민감 사용자를 위한 효과 제어 */
+@media (prefers-reduced-motion: reduce) {
+  #hero .content h5,
+  #hero .content .subtitle,
+  #hero .content h1,
+  #hero .content .title,
+  #hero .content h2,
+  #hero .content .lead,
+  #hero .content p,
+  #hero .content .hero-buttons,
+  #hero .content .btn,
+  #hero .content ul.social-icon {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
