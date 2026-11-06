@@ -34,10 +34,10 @@ Hugo 정적 사이트 생성기(SSG)와 GitHub Actions를 활용하여 구축 �
 ```bash
 # 1. 저장소 복제 및 site 폴더 이동
 git clone [https://github.com/dgt5740/myPortfolio.git](https://github.com/dgt5740/myPortfolio.git)
-cd myPortfolio/site
+cd site
 
 # 2. 로컬 개발 서버 실행 (실시간 미리보기: http://localhost:1313/myPortfolio/)
-hugo server -b http://localhost:1313/myPortfolio/ --theme template --themesDir themes
+hugo server -b http://localhost:1313/ --theme template --themesDir themes
 
 # 3. 정적 사이트 빌드 검증 (site/public 생성)
 hugo --gc --minify --theme template --themesDir themes

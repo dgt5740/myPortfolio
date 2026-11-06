@@ -2,7 +2,7 @@
 title: "파이썬 라이브러리를 통한 게임 제작 팀 프로젝트"
 date: 2026-10-14
 description: "파이썬 라이브러리를 통한 게임 제작 팀 프로젝트 상세 내용"
-image: "/myPortfolio/images/projects/converter.jpg"
+image: "/images/projects/converter.png"
 toc: true
 tags:
   - "Python"

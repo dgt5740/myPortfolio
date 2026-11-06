@@ -48,7 +48,7 @@ languages:
             - icon: fas fa-envelope
               url: mailto:dgt5740@gmail.com
 
-      # 2. 소개 섹션 (P71 관심 분야, P72 학습 목표 및 계획)
+      # 2. 소개 섹션
       about:
         enable: true
         title: "소개"
@@ -152,7 +152,7 @@ languages:
               - "Algorithm"
             featured:
               name: "상세 보기 ->"
-              link: "/myPortfolio/projects/python_game/"
+              link: "/projects/python_game/"
             links:
               - icon: fab fa-github
                 url: https://github.com/dgt5740

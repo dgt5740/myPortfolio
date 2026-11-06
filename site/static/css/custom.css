@@ -1,0 +1,39 @@
+
+
+/* 1. 모바일(390px) 가로 스크롤 방지 */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* 2. 한글 텍스트 및 긴 URL 줄바꿈 처리 */
+p, h1, h2, h3, h4, span, a, li, .content {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* 3. 고정 헤더에 앵커 도착 지점이 가려지는 현상 방지 */
+section, [id] {
+  scroll-margin-top: 85px;
+}
+
+/* 4. 키보드 Tab 키 탐색 시 시각적 포커스 링 표시 */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #2563EB !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.25) !important;
+}
+
+/* 5. 200% 브라우저 확대 시 레이아웃 보호 */
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .hero-content {
+    font-size: 1rem !important;
+  }
+}
