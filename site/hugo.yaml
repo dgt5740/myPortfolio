@@ -137,7 +137,7 @@ languages:
               - "Web Accessibility"
             featured:
               name: "상세 보기 ->"
-              link: "/myPortfolio/projects/hugo_portfolio/"
+              link: "/projects/hugo_portfolio/"
             links:
               - icon: fab fa-github
                 url: https://github.com/dgt5740/myPortfolio
