@@ -52,23 +52,12 @@
 <header id="profileHeader">
     <nav class="pt-3 navbar navbar-expand-lg {{ if .Site.Params.animate }}animate{{ end }}">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
-            <!-- navbar brand -->
-            <a class="navbar-brand primary-font text-wrap" href="{{ .Site.Home.RelPermalink }}">
-                {{ if and (or (.Site.Params.favicon) (.Site.Params.navbar.brandLogo)) (.Site.Params.navbar.showBrandLogo | default true) }}
-                <img src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}" width="30" height="30"
-    class="d-inline-block align-top" alt="{{ .Site.Params.navbar.brandName | default .Site.Params.title }} 로고">
-                {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
-                {{ else }}
-                {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
-                {{ end }}
+            <!-- navbar brand (fav.png 절대경로 보장 + '현수' 볼드 및 크기 확대) -->
+            <a class="navbar-brand primary-font text-wrap d-flex align-items-center" href="{{ .Site.Home.RelPermalink }}">
+                <img src="{{ "fav.png" | relURL }}" width="32" height="32"
+                    class="d-inline-block align-top me-2" alt="현수 로고">
+                <span class="fw-bold fs-5 text-reset">{{ .Site.Params.navbar.brandName | default .Site.Params.title }}</span>
             </a>
-
-            {{ if not (.Site.Params.navbar.disableSearch | default false) }}
-                <div>
-                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='{{ .Site.Params.navbar.searchPlaceholder | default (i18n "search_placeholder") }}'
-                        aria-label="Search" oninput="searchOnChange(event)">
-                </div>
-            {{ end }}
 
             <!-- navbar toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -81,13 +70,6 @@
             <!-- navbar content -->
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
                 <ul class="navbar-nav {{ .Site.Params.navbar.align | default "ms-auto"}} text-center">
-                    {{ if not (.Site.Params.navbar.disableSearch | default false) }}
-                        <li class="nav-item navbar-text d-block d-md-none">
-                            <div class="nav-link">
-                                <input id="search-mobile" autocomplete="off" class="form-control mr-sm-2" placeholder='{{ .Site.Params.navbar.searchPlaceholder | default (i18n "search_placeholder") }}' aria-label="Search" oninput="searchOnChange(event)">
-                            </div>
-                        </li>
-                    {{ end }}
 
                     {{ if and (.Site.Params.about.enable | default false) (not (.Site.Params.navbar.menus.disableAbout | default false)) }}
                     <li class="nav-item navbar-text">

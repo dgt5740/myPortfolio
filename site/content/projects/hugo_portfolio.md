@@ -1,13 +1,11 @@
 ---
 title: "Hugo 기반 포트폴리오 웹사이트 구축 및 자동 배포"
-date: 2026-10-14
+date: 2026-11-06
 description: "Hugo 기반 포트폴리오 웹사이트 구축 및 자동 배포 상세 내용"
 image: "/images/projects/profile.png"
 toc: true
 tags:
-  - "Hugo"
-  - "GitHub Actions"
-  - "Web Accessibility"
+  - ""
 ---
 
 [← 메인 포트폴리오로 돌아가기](/myPortfolio/)

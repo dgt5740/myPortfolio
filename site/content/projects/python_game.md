@@ -1,13 +1,11 @@
 ---
 title: "파이썬 라이브러리를 통한 게임 제작 팀 프로젝트"
-date: 2026-10-14
+date: 2023-06-10
 description: "파이썬 라이브러리를 통한 게임 제작 팀 프로젝트 상세 내용"
 image: "/images/projects/converter.png"
 toc: true
 tags:
-  - "Python"
-  - "Game Project"
-  - "Team Collaboration"
+  - ""
 ---
 
 [← 메인 포트폴리오로 돌아가기](/myPortfolio/)
