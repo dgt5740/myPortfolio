@@ -1,22 +1,25 @@
 <div class="container py-4">
     <div class="row justify-content-center">
-        <div class="col-md-4 text-center">
+        <div class="col-md-6 text-center">
             {{ if or .Site.Params.navbar.brandLogo .Site.Params.favicon }}
                 <div class="pb-2">
-                    <a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
-                        <img alt="Footer logo" src="{{ (.Site.Params.navbar.brandLogo | default .Site.Params.favicon) | relURL }}"
+                    <a href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
+                        <img alt="현수 로고" src="{{ "fav.png" | relURL }}"
                             height="40px" width="40px">
                     </a>
                 </div>
             {{ end }}
-            &copy; {{ now.Format "2006"}} {{ .Site.Params.copyright }} {{ .Site.Params.terms.copyright | default (i18n "copyright") }}
-            <div class="text-secondary">
+            <p class="mb-1 text-muted">
+                &copy; {{ now.Format "2006"}} <strong>양현수</strong>. All rights reserved.
+            </p>
+            <p class="small text-secondary mb-2">
+                전북대학교 컴퓨터인공지능학부 | 포트폴리오 웹사이트
+            </p>
+            <div class="text-secondary small">
                 Made with
-                <span class="text-danger">
-                    &#10084;
-                </span>
+                <span class="text-danger">&#10084;</span>
                 and
-                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank" rel="noopener noreferrer"
                     title="Designed and developed by gurusabarish">
                     Hugo Profile
                 </a>
