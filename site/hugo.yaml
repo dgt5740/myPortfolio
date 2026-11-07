@@ -46,7 +46,7 @@ languages:
             - icon: fas fa-blog                 # 네이버 블로그 링크
               url: https://blog.naver.com/yhs9395
             - icon: fas fa-envelope
-              url: mailto:dgt5740@gmail.com
+              url: "#contact"
 
       # 2. 소개 섹션
       about:
@@ -222,7 +222,7 @@ languages:
             - icon: fas fa-blog
               url: https://blog.naver.com/yhs9395
             - icon: fas fa-envelope
-              url: mailto:dgt5740@gmail.com
+              url: "#contact"
       # 2. About Me
       about:
         enable: true
@@ -306,7 +306,7 @@ languages:
               - "Web Accessibility"
             featured:
               name: "View Details ->"
-              link: "/projects/hugo_portfolio/"
+              link: "/en/projects/hugo_portfolio/"
             links:
               - icon: fab fa-github
                 url: https://github.com/dgt5740/myPortfolio
@@ -320,7 +320,7 @@ languages:
               - "Algorithm"
             featured:
               name: "View Details ->"
-              link: "/projects/python_game/"
+              link: "/en/projects/python_game/"
             links:
               - icon: fab fa-github
                 url: https://github.com/dgt5740
