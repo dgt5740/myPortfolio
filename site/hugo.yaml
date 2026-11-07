@@ -33,7 +33,7 @@ languages:
         roundImage: true
         button:
           enable: true
-          name: "대표 활동 보기"
+          name: "활동"
           url: "#projects"
           download: false
           newPage: false
@@ -121,10 +121,10 @@ languages:
           - title: "Python & 알고리즘"
             description: "기초 자료구조와 알고리즘 문제를 해결하며 논리적 사고력을 기르고, 자동화 스크립트를 작성하여 작업 효율을 높입니다."
 
-      # 6. 대표 활동 섹션
+      # 6. 활동 섹션
       projects:
         enable: true
-        title: "대표 활동"
+        title: "활동"
         items:
           - title: "Hugo 기반 포트폴리오 웹사이트 구축 및 자동 배포"
             image: /images/projects/profile.png

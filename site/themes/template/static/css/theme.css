@@ -54,13 +54,13 @@ body:not(.dark) #sun {
 }
 
 /* ========================================================
-   초급프로젝트 과제 1 - 한국어 폰트, 여백, 반응형/접근성 영구 고정
+   한국어 폰트, 여백, 반응형/접근성 영구 고정
    ======================================================== */
 
 /* 사이트 전체 기본 글꼴 및 글자 크기 지정 */
 body, #primary-font {
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif !important;
-  font-size: 1.05rem !important;
+  font-size: 1.0rem !important;
   line-height: 1.75 !important;
 }
 
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 소개(About) 및 활동(Projects) 본문 글자 크기 */
 .content, #about .content, #projects .card-text {
-  font-size: 1rem !important;
+  font-size: 1.15rem !important;
   line-height: 1.8 !important;
 }
 
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 4rem !important;    /* 소개 섹션 위쪽 여백 */
 }
 
-/* 모바일(390px) 가로 스크롤 완전 방지 (P31, P32, P33) */
+/* 모바일(390px) 가로 스크롤 완전 방지 */
 html, body {
   overflow-x: hidden;
   width: 100%;
@@ -100,12 +100,12 @@ p, h1, h2, h3, h4, span, a, li, .content {
   overflow-wrap: break-word;
 }
 
-/* 고정 헤더에 앵커 도착 지점이 가려지는 현상 방지 (P22, P38) */
+/* 고정 헤더에 앵커 도착 지점이 가려지는 현상 방지 */
 section, [id] {
   scroll-margin-top: 85px;
 }
 
-/* 키보드 Tab 키 탐색 시 포커스 링 보장 (P41~P43) */
+/* 키보드 Tab 키 탐색 시 포커스 링 보장 */
 a:focus,
 a:focus-visible,
 button:focus,
@@ -186,7 +186,7 @@ a.social-icon:focus-visible {
   animation-delay: 0.7s;
 }
 
-/* P50 웹 접근성 준수: 동작 감지 민감 사용자를 위한 효과 제어 */
+/* 웹 접근성 준수: 동작 감지 민감 사용자를 위한 효과 제어 */
 @media (prefers-reduced-motion: reduce) {
   #hero .content h5,
   #hero .content .subtitle,
@@ -203,3 +203,4 @@ a.social-icon:focus-visible {
     animation: none !important;
   }
 }
+
