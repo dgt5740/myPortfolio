@@ -12,6 +12,7 @@ header {
 
 header .navbar .navbar-nav a {
     color: var(--text-color) !important;
+    font-weight: bold !important;
 }
 
 #theme-toggle {

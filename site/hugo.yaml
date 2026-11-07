@@ -33,7 +33,7 @@ languages:
         roundImage: true
         button:
           enable: true
-          name: "활동"
+          name: "대표 활동"
           url: "#projects"
           download: false
           newPage: false
@@ -124,7 +124,7 @@ languages:
       # 6. 활동 섹션
       projects:
         enable: true
-        title: "활동"
+        title: "대표 활동"
         items:
           - title: "Hugo 기반 포트폴리오 웹사이트 구축 및 자동 배포"
             image: /images/projects/profile.png
