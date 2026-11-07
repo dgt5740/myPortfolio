@@ -1,14 +1,30 @@
 {{ define "head" }}
-<meta name="description" content={{ .Site.Params.description }}>
+<meta name="description" content="{{ .Site.Params.description }}">
 {{ end }}
 
 {{ define "title" }}
-{{ .Site.Params.terms.pageNotFound | default (i18n "page_not_found") }} | {{ .Site.Title }}
+{{ if eq .Site.Language.Lang "ko" }}페이지를 찾을 수 없습니다{{ else }}Page Not Found{{ end }} | {{ .Site.Title }}
 {{ end }}
 
 {{ define "main" }}
-<div class="container py-5 text-center">
-    <img src="{{ (printf "%s404.png" (.Site.Params.staticPath | default "")) | relURL }}" alt='{{ .Site.Params.terms.pageNotFound | default (i18n "page_not_found") }}' class="img-fluid" width="40%">
-    <h1>{{ .Site.Params.terms.pageNotFound | default (i18n "page_not_found") }}</h1>
+<div class="container py-5 text-center" style="min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <div class="my-3">
+        <img src="{{ "404.png" | relURL }}" alt="404 에러 - 페이지를 찾을 수 없습니다" class="img-fluid" style="max-width: 280px;">
+    </div>
+    <h1 class="fw-bold my-3">
+        {{ if eq .Site.Language.Lang "ko" }}페이지를 찾을 수 없습니다{{ else }}Page Not Found{{ end }}
+    </h1>
+    <p class="text-muted fs-5 mb-4">
+        {{ if eq .Site.Language.Lang "ko" }}
+            요청하신 페이지가 존재하지 않거나, 주소가 변경되었을 수 있습니다.<br>아래 버튼을 눌러 메인 화면으로 돌아가실 수 있습니다.
+        {{ else }}
+            The page you requested could not be found or has been moved.<br>Please return to the main portfolio page.
+        {{ end }}
+    </p>
+    <div>
+        <a href="{{ .Site.Home.RelPermalink }}" class="btn btn-primary px-4 py-2">
+            {{ if eq .Site.Language.Lang "ko" }}← 메인 포트폴리오로 돌아가기{{ else }}← Back to Main Portfolio{{ end }}
+        </a>
+    </div>
 </div>
 {{ end }}
