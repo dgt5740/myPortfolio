@@ -9,51 +9,68 @@
                     <div class="text-center">
                         {{ $contact.content | emojify | markdownify }}
                     </div>
-                    {{ if .Site.Params.contact.formspree.enable | default false }}
-                    <div class="row justify-content-center">
-                        <form id="contact-form" action="https://formspree.io/f/{{ .Site.Params.contact.formspree.formId }}" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
-                            <div class="form-group pt-3">
-                                <input type="email" class="form-control"  name="email" required="true" placeholder='{{ .Site.Params.contact.formspree.emailCaption | emojify | default (i18n "contact_email_placeholder") }}'>
-                            </div>
-                            <div class="form-group pt-3">
-                                <textarea class="form-control" name="message" required="true" placeholder='{{ .Site.Params.contact.formspree.messageCaption | emojify | default (i18n "contact_message_placeholder") }}' rows="{{ .Site.Params.contact.formspree.messageRows | default 3 }}"></textarea>
-                            </div>
-                            <div class="form-group text-center pt-3">
-                                <button type="submit" class="btn">{{ $contact.btnName | default .Site.Params.contact.btnName | default (i18n "contact") }}</button>
-                            </div>
-                        </form>
-                    </div>
-                    {{ else if or (.Site.Params.contact.email)  (.Site.Params.contact.btnLink) }}
+
+                    {{ if or (.Site.Params.contact.email) (.Site.Params.contact.btnLink) }}
                     <div class="text-center pt-3">
-                        <a 
-                            href='{{ if .Site.Params.contact.btnLink }}
-                                    {{ .Site.Params.contact.btnLink | default "#" }}
-                                  {{ else }}
-                                    mailto:{{ .Site.Params.contact.email }}
-                                  {{ end }}'
-                            target="_blank"
-                            class="btn"
+                        <button 
+                            type="button" 
+                            id="emailCopyBtn" 
+                            class="btn btn-primary px-4 py-2" 
+                            onclick="copyEmailToClipboard(event, '{{ .Site.Params.contact.email }}')"
+                            aria-label="{{ if eq .Site.Language.Lang "ko" }}양현수 이메일 주소 클립보드 복사{{ else }}Copy HyeonSoo Yang Email Address{{ end }}"
                         >
-                            {{ $contact.btnName | default .Site.Params.contact.btnName | default (i18n "contact") }}
-                        </a>
+                            <i class="fas fa-copy me-2" aria-hidden="true"></i>
+                            <span id="emailBtnText">{{ if eq .Site.Language.Lang "ko" }}이메일 주소 복사{{ else }}Copy Email Address{{ end }}</span>
+                        </button>
                     </div>
                     {{ end }}
                 </div>
             </div>
         </div>
     </div>
-    <div id="contact-form-status"></div>
 </section>
-{{ end }}
 
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="check-circle-fill" viewBox="0 0 16 16">
-    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-  </symbol>
-  <symbol id="info-fill" viewBox="0 0 16 16">
-    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-  </symbol>
-  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
-    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-  </symbol>
-</svg>
+<script>
+function copyEmailToClipboard(e, email) {
+    if (e) e.preventDefault();
+    var emailAddress = email || '{{ .Site.Params.contact.email }}';
+    var btnText = document.getElementById("emailBtnText");
+    var originalText = btnText ? btnText.innerText : "";
+
+    var onCopySuccess = function() {
+        if (btnText) {
+            btnText.innerText = '{{ if eq .Site.Language.Lang "ko" }}복사 완료 ✔{{ else }}Copied! ✔{{ end }}';
+            setTimeout(function() {
+                btnText.innerText = originalText;
+            }, 2500);
+        }
+    };
+
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(emailAddress).then(onCopySuccess).catch(function() {
+            fallbackCopy(emailAddress, onCopySuccess);
+        });
+    } else {
+        fallbackCopy(emailAddress, onCopySuccess);
+    }
+}
+
+function fallbackCopy(text, callback) {
+    var textArea = document.createElement("textarea");
+    textArea.value = text;
+    textArea.style.position = "fixed";
+    textArea.style.left = "-999999px";
+    textArea.style.top = "-999999px";
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+        document.execCommand("copy");
+        if (callback) callback();
+    } catch (err) {
+        console.error("Fallback copy failed: ", err);
+    }
+    document.body.removeChild(textArea);
+}
+</script>
+{{ end }}
