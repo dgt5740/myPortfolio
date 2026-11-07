@@ -24,7 +24,7 @@ languages:
       hero:
         enable: true
         intro: "안녕하세요!"
-        title: "꿈을 향해<br>나아가고 있는"
+        title: "꿈을 향해<br>나아가는"
         subtitle: "양현수 입니다."
         content: "전북대학교 / 컴퓨터인공지능학부 재학 중"
         image: /images/me2.jpg
@@ -182,28 +182,27 @@ languages:
 
 
   # ------------------------------------------------------------
-  # [2. 영어 섹션 (상단 🌐에서 English 선택 시 화면)]
+  # 2. 영어 섹션
   # ------------------------------------------------------------
   en:
     languageName: "English"
     weight: 2
     contentDir: "content"
     params:
-      title: "HyeonSoo Yang Portfolio"
-      description: "Personal introduction and portfolio website"
+      title: "HyunSoo"
+      description: "Introductory Project Assignment 1 - Personal Portfolio Website"
       favicon: "fav.png"
       brand:
-        title: "HyeonSoo Yang"
-
+        title: "HunSoo Yang"
       navbar:
         searchPlaceholder: "Search..."
-
+      # 1. Hero
       hero:
         enable: true
-        intro: "Hello, I am"
-        title: "Walking the Path of a Developer,"
-        subtitle: "HyeonSoo Yang."
-        content: "Undergraduate Student, Dept. of Computer and Artificial Intelligence, Jeonbuk National University"
+        intro: "Hello!"
+        title: "Towards my dream"
+        subtitle: "I'm HyunSoo Yang."
+        content: "JBNU | Computer & AI Engineering"
         image: /images/me2.jpg
         bottomImage:
           enable: false
@@ -224,116 +223,124 @@ languages:
               url: https://blog.naver.com/yhs9395
             - icon: fas fa-envelope
               url: mailto:dgt5740@gmail.com
-
+      # 2. About Me
       about:
         enable: true
         title: "About Me"
         image: "/images/me.png"
-        content: >
-          Passionate about computer science and AI technology, striving to solve real-world problems with code as a software engineer.
-          <br><br>
-          <b>Interests (P71):</b> Web front-end architecture and user experience optimization, ensuring accessibility and responsive design across all devices.
-          <br><br>
-          <b>Goals & Plan (P72):</b> Build and deploy responsive web services conforming to W3C accessibility guidelines, conducting weekly component-level accessibility tests.
+        content: |
+          I aspire to become a software engineer with a deep interest in artificial intelligence technologies that solve real-world problems.
+          I am passionate about on-device AI and web front-end development.
 
+          I am particularly intrigued by on-device AI technologies that operate instantaneously on user hardware without relying on heavy data servers, enabling unrestricted accessibility for all users.
+          Instead of relying solely on online LLMs, I plan to run open-source models like Ollama locally and apply them to academic coursework and practical projects.
+          Additionally, I aim to implement lightweight image classification models using TensorFlow.
+        skills:
+          enable: true
+          title: ""
+          items:
+           - "HTML / CSS / JS"
+           - "Python"
+           - "GitHub"
+           - "Linux"
+           - "C++"
+      # 3. Education
       education:
         enable: true
         title: "Education"
         items:
-          - title: "B.S. in Computer and Artificial Intelligence"
+          - title: "B.S. in Computer & Artificial Intelligence"
             school:
-              name: "Jeonbuk National University"
+              name: "Jeonbuk National University (JBNU)"
               url: "https://www.jbnu.ac.kr"
-            date: "Mar 2024 - Present"
-            GPA: "Academic Excellence"
+            date: "2024.03 - Present"
             content: |-
-              Key Coursework:
-                - Computer Programming & Data Structures
-                - Object-Oriented Programming & Web Lab
-                - Open Source Software & Git Version Control
-
+              GPA : 3.9 / 5.0
+              Coursework & Focus Areas:
+                - Data Structures and Algorithms
+                - Linear Algebra, Probability and Statistics
+                - Version Control (Git) and Web Service Development
+      # 4. Experience
       experience:
         enable: true
         title: "Experience"
         items:
-          - company: "Department Academic Study Group"
+          - company: "C Programming & Algorithm Study"
             companyUrl: "https://github.com/dgt5740"
             jobs:
-              - name: "Web Dev & Algorithm Study Member"
-                date: "Mar 2024 - Present"
+              - name: "Academic Study Group Member"
+                date: "2024.04 - 2024.07"
                 content: >
-                  Collaborating with peers on weekly algorithm problem-solving and foundational web engineering.
-              - name: "Introductory Project Individual Practice"
-                date: "Sep 2026 - Oct 2026"
-                content: >
-                  Built and deployed a personal portfolio website utilizing Hugo and GitHub Actions CI/CD pipelines.
-          - company: "Undergraduate Software Project Team"
-            companyUrl: "https://www.jbnu.ac.kr"
+                  Collaborated weekly with peers to solve algorithmic challenges and build foundational computer science problem-solving skills.
+          - company: "web baseProject"
+            companyUrl: "https://github.com/dgt5740/myPortfolio"
             jobs:
-              - name: "Foundational Programming Project"
-                date: "Sep 2024 - Dec 2024"
+              - name: "Web Programming & Version Control"
+                date: "2026.09 - 2026.12"
                 content: >
-                  Collaborated on fundamental programming projects and learned Git collaboration workflows.
-
+                  Developed web programming foundations and practiced Git version control workflows and collaborative development pipelines.
+      # 5. Skills
       skills:
         enable: true
         title: "Skills"
         items:
           - title: "HTML/CSS & Responsive Web"
-            description: "Proficient in semantic markup and flexible grid layouts tailored for mobile, tablet, and desktop viewports."
+            description: "Proficient in semantic markup and flexible grid layouts tailored for mobile, tablet, and desktop viewports (390px, 768px, 1440px)."
           - title: "Git & GitHub CI/CD"
             description: "Managing version history and automated deployment pipelines using GitHub Actions."
           - title: "Python & Algorithms"
-            description: "Solving data structure and algorithmic challenges and automating development workflows."
-
+            description: "Solving algorithmic problems and developing automation scripts to improve development efficiency."
+      # 6. Projects
       projects:
         enable: true
         title: "Projects"
         items:
           - title: "Hugo-based Portfolio Website & Automated Deployment"
             image: /images/projects/profile.png
-            content: >
-              <b>Timeline & Status (P74):</b> Oct 2026 (Completed)<br>
-              <b>Purpose (P75):</b> Understand static site generation (SSG) mechanics and deploy a responsive personal branding platform via CI/CD.<br>
-              <b>Role & Scope (P76):</b> 100% individual contribution covering architecture, content curation, theme customization, and automated release pipeline.<br>
-              <b>Approach & Tech Stack (P77):</b> Selected Hugo for performance and security, integrated GitHub Actions for branch-triggered builds.<br>
-              <b>Outcome (P78):</b> Public HTTPS deployment and open-source GitHub repository (<a href="https://github.com/dgt5740/myPortfolio" target="_blank">Repository</a>)<br>
-              <b>Learnings & Future Work (P79):</b> Mastered template overriding and accessibility standards; planning multilingual blog indexing next.
+            content: |
+              Timeline: Oct 2026 (Done) / 
+              Overview: Built and deployed a personal branding portfolio website using the Hugo static site generator and GitHub Actions automated CI/CD pipeline.
             badges:
               - "Hugo"
               - "GitHub Actions"
               - "Web Accessibility"
+            featured:
+              name: "View Details ->"
+              link: "/projects/hugo_portfolio/"
             links:
               - icon: fab fa-github
-                url: https://github.com/dgt5740
-          - title: "Python Algorithm Practice & Automation Tool"
-            image: /images/projects/converter.png
+                url: https://github.com/dgt5740/myPortfolio
+          - title: "Pygame-based Object Avoidance Game Team Project"
+            image: /images/projects/converter.jpg
             content: >
-              <b>Timeline:</b> Fall 2024<br>
-              <b>Overview:</b> Practiced data structures and algorithmic implementations in Python to enhance problem-solving capabilities.
+              Timeline: Fall 2023 (Done) / 
+              Overview: Conducted a team project using Python Pygame library to develop a real-time 2D game avoiding falling objects from the sky.
             badges:
               - "Python"
               - "Algorithm"
+            featured:
+              name: "View Details ->"
+              link: "/projects/python_game/"
             links:
               - icon: fab fa-github
                 url: https://github.com/dgt5740
-
+      # 7. Achievements
       achievements:
         enable: true
         title: "Achievements"
         items:
           - title: "Coursework Excellence in Programming Lab"
-            content: "Successfully implemented foundational algorithms and participated in continuous code reviews and refactoring."
-          - title: "Hugo Open Source Portfolio Deployment"
-            content: "Completed a fully responsive personal branding website hosted on GitHub Pages via automated CI/CD pipelines."
+            content: "Successfully completed data structure and programming lab assignments, enhancing practical competence through project analysis."
+          - title: "Hugo-based Web Platform Deployment"
+            content: "Constructed a fully responsive portfolio site on GitHub Pages and established an automated CI/CD deployment pipeline."
             url: "https://github.com/dgt5740/myPortfolio"
-
+      # 8. Contact
       contact:
         enable: true
         title: "Contact"
-        content: "Feel free to reach out via email or GitHub for collaboration."
+        content: "Reach me at dgt5740@gmail.com"
         email: "dgt5740@gmail.com"
-        btnName: "Get in touch"
+        btnName: "Copy Email Address"
       footer:
         socialNetworks:
           github: https://github.com/dgt5740
